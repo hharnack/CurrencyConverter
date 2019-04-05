@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="../js/js.js"></script>
+</head>
+
+<body>
+    <div class = "outerContainer">
+    <div class="container">
+        <h1>Currency Converter</h1>
+    </div>
+    <div class="container">
+        <table>
+            <tr class="gray">
+                <th>
+                    Source Currency
+                </th>
+                <th>
+                    Amount
+                </th>
+                <th>
+                    Target Currency
+                </th>
+                <th>
+                    Conversion Value
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <select id="source">
+                        <option id="Euro" value="euro">Euro</option>
+                        <option id="USDollar" value="us">US Dollar</option>
+                        <option id="UKPoundSterling" value="uk">UK Pound Sterling</option>
+                        <option id="JapaneseYen" value="jpy">Japanese Yen</option>
+                        <option id="CanadianDollar" value="can">Canadian Dollar</option>
+                    </select>
+
+                </td>
+
+                <td>
+                    <input type="number" id="amount" min="0" onchange="convertCurrency(this.value);" onkeyup="convertCurrency(this.value);">
+                </td>
+
+                <td>
+                    <select id="target">
+                        <option id="EuroTarget" value="euro">Euro</option>
+                        <option id="USTarget" value="us">US Dollar</option>
+                        <option id="UKTarget" value="uk">UK Pound Sterling</option>
+                        <option id="JapaneseTarget" value="jpy">Japanese Yen</option>
+                        <option id="CanadianTarget" value="can">Canadian Dollar</option>
+                    </select>
+
+                </td>
+
+                <td id="result">
+                    
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+
+</html>
